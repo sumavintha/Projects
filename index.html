@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscillation Model</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- Plotly.js for charting -->
+</head>
+<body>
+
+    <!-- Title -->
+    <h1>Oscillation Model</h1>
+
+    <!-- Description -->
+    <div id="description">
+        <p>
+            This model simulates the interaction between the Hypothalamus, Pituitary, and Gonad.
+            The slider allows you to change the parameter <strong>n</strong>, which affects the behavior of the model over time.
+            The model shows how changes in one system affect the others in a feedback loop, which is often seen in biological systems.
+        </p>
+    </div>
+
+    <!-- Slider to control 'n' -->
+    <label for="nSlider">Select n value:</label>
+    <input type="range" id="nSlider" min="1" max="10" value="5" step="1">
+    <span id="nValue">5</span>
+
+    <!-- Plot Area -->
+    <div id="plot"></div>
+
+    <!-- Footer -->
+    <footer>
+        Created by Suma Vintha
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
